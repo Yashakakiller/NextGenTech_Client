@@ -2,6 +2,9 @@
 
 This is the frontend of an e-commerce application built using the MERN stack. The frontend is developed using React .
 
+
+Note : Note: I had used free server provider because of which content in the website took time to load and perform action, so kindly go through the networks tab in the inspect window to check for any API call . This is the frontend of an e-commerce application built using the MERN stack. The frontend is developed using React .
+
 ## Table of Contents
 
 - [Features](#features)
