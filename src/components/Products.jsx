@@ -109,7 +109,7 @@ const Products = () => {
                           ₹ <b>{product.price}</b>
                         </p>
 
-                        {product.quantity == 0 || product.quantity == null ? (
+                        {/* {product.quantity == 0 || product.quantity == null ? (
                           <p className="text-danger ">
                             Out of Stock .. Will Back Soon !!!
                           </p>
@@ -121,7 +121,7 @@ const Products = () => {
                               </p>
                             ) : null}
                           </>
-                        )}
+                        )} */}
 
                        {localStorage.getItem("token") && auth ? (<> <button
                           className="c_add_t_w "

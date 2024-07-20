@@ -354,8 +354,6 @@ p {
 
 
 
-
-
 .searchInput {
   display: block;
   margin: 10px auto;
@@ -374,7 +372,6 @@ p {
   border: none;
   color: #cce7d3;
   background-color: #b99835;
-  /* box-shadow: 5px 5px 5px rgb(137, 126, 126); */
 
 }
 
@@ -408,7 +405,6 @@ p {
   width: 310px;
   height: 100%;
   padding: 14px 14px;
-  /* border: 1px solid #cce7d0; */
   border-radius: 25px;
   cursor: pointer;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
@@ -485,7 +481,6 @@ p {
   width: 310px;
   height: 100%;
   padding: 14px 14px;
-  /* border: 1px solid #cce7d0; */
   border-radius: 25px;
   cursor: pointer;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
@@ -551,8 +546,6 @@ p {
   position: relative;
   height: 270px;
   padding: 1px;
-  /* border: 1px solid #cce7d0; */
-  /* border-radius: 5px; */
   cursor: pointer;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
   margin: 15px 5px;
@@ -750,17 +743,18 @@ footer a:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 50px;
 }
 
 
 .p_all_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 10px 10px 0 10px;
-  /* box-shadow: 10px 10px 20px rgb(33, 32, 32); */
   width: 350px;
   height: 500px;
   margin: 15px;
-
+  position: relative;
 }
 
 .p_all_box img {
@@ -774,10 +768,14 @@ footer a:hover {
 .p_all_box a {
   background-color: black;
   color: white;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 10px;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
 }
-
-
-
 
 
 
@@ -830,9 +828,7 @@ footer a:hover {
   border-radius: 20px;
 }
 
-#allProducts .all_box:hover {
-  /* box-shadow:20px 20px 30px rgb(144, 136, 136) ; */
-}
+
 
 #allProducts .all_box .desc {
   text-align: center;
@@ -862,10 +858,7 @@ footer a:hover {
 }
 
 
-/* 
-.sproduct .row .mpimage{
-  width: 250px;
-} */
+
 /* ProductsDetailPage.css */
 .small-img-group {
   display: flex;
@@ -881,10 +874,7 @@ footer a:hover {
   height: 150px;
 }
 
-.mainImage {
-  height: 500px;
-  width: 400px;
-}
+
 
 .sproduct select {
   display: block;
@@ -1116,12 +1106,6 @@ tbody tr.hide td img {
 
 
 
-@media (max-width: 1000px) {
-
-  td:not(:first-of-type) {
-    min-width: 12.1rem;
-  }
-}
 
 
 
@@ -1148,19 +1132,6 @@ tbody td.active {
 
 
 
-
-
-
-
-
-
-
-
-
-.finalImage {
-  width: 400px;
-  border-radius: 10px;
-}
 
 .contact_container {
   position: relative;
@@ -1310,7 +1281,76 @@ tbody td.active {
 
 
 
+
+
+
+
+/* MEDIA QUIERIES */
+
+
+
+
+@media (max-width: 1000px) {
+
+  td:not(:first-of-type) {
+    min-width: 12.1rem;
+  }
+}
+
+
 @media (max-width: 991px) {
+  
+    #hero img {
+      height: 20vh;
+      width: 90%;
+      display: block;
+      border-radius: 30px;
+      margin: 10px auto;
+    }
+
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #000216;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+    transition: 0.3s ease;
+  }
+
+  #navbar li {
+    margin-bottom: 25px;
+  }
+
+  #navbar li a svg {
+    font-size: 25px;
+    /* color: white ; */
+  }
+
+  #navbar li a {
+    font-size: 15px;
+    color: white;
+  }
+
+  .burger {
+    display: flex;
+    align-items: center;
+    font-size: 27px;
+  }
+
+  #close {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #f6f6f6;
+    font-size: 34px;
+  }
 
   .p_all_box {
     width: 230px;
@@ -1365,9 +1405,7 @@ tbody td.active {
     border-radius: 20px;
   }
 
-  .finalImage {
-    width: 200px;
-  }
+
 
   #navbar {
     display: flex;
@@ -1413,15 +1451,7 @@ tbody td.active {
     font-size: 34px;
   }
 
-  #hero {
-    /* height: 50vh; */
-    padding: 10px 0;
-  }
-
-  #hero img {
-    /* width: 200px; */
-    height: 200px;
-  }
+  
 
   #header .logo {
     width: 40px;
@@ -1453,10 +1483,7 @@ tbody td.active {
     margin-top: 10px;
   }
 
-  .mainImage {
-    height: 300px;
-    width: 270px;
-  }
+  
 
   table thead tr th:first-child,
   tbody tr td:first-child {
@@ -1479,12 +1506,18 @@ tbody td.active {
   }
 
 
-
+  #hero img{
+    display: none;
+  }
 
 }
 
 @media (max-width:539px) {
 
+  
+  #hero img{
+    display: none;
+  }
   #allProducts .all_box {
     width: 189px;
     height: 320px;
