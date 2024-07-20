@@ -12,8 +12,8 @@ const Footer = () => {
       <div className="col">
         <img className='flogo' src="/logo.png" alt='logo' style={{width:"80px"}}/>
         <h4>Contact</h4>
-        <p><strong>Address</strong> 44 Jawahar Colony Tonk Road Jaipur</p>
-        <p><strong>Phone</strong> +91 9928585137</p>
+        <p><strong>Address</strong> JAIPUR , RAJASTHAN , INDIA</p>
+        <p><strong>Phone</strong> +91 9999999999</p>
         <p><strong>Hours</strong> 24 Hours Available</p>
         <p><strong>Email</strong> yash0856gupta@gmail.com</p>
         <div className="follow">

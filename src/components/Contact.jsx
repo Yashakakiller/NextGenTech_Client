@@ -53,7 +53,7 @@ We're delighted that you've chosen to reach out to us. Whether you have a questi
             
             <div class="contact-info-content">
               <h4>Address</h4>
-              <p>Ekudom Building,<br/> 122 mahaset Road, Sipraya, Bangrak <br/>BANGKOK .10500</p>
+              <p>Ekudom<br/> mahaset building, Sipraya, Bangrak <br/>BANGKOK .10500</p>
               <p>Jhori Bazar<br/>Jaipur,302002 <br/></p>
             </div>
           </div>
@@ -66,7 +66,7 @@ We're delighted that you've chosen to reach out to us. Whether you have a questi
             <div class="contact-info-content">
               <h4>Phone</h4>
               <p>+66 000000000</p>
-              <p>+91 000000000</p>
+              <p>+91 999999999</p>
             </div>
           </div>
           
