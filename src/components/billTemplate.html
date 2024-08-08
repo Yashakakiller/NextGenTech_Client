@@ -5,7 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bill</title>
     <style>
-        /* Your existing styles */
+        @media screen and (max-width: 600px) {
+            .hiddenMobile {
+                display: none !important;
+            }
+            .visibleMobile {
+                display: block !important;
+            }
+            .fullTable, .fullPadding {
+                width: 100% !important;
+            }
+            .col {
+                width: 100% !important;
+                display: block !important;
+            }
+        }
+
+        @media screen and (min-width: 601px) {
+            .hiddenMobile {
+                display: block !important;
+            }
+            .visibleMobile {
+                display: none !important;
+            }
+            .fullTable, .fullPadding {
+                width: 600px !important;
+            }
+            .col {
+                width: auto !important;
+                display: table-cell !important;
+            }
+        }
     </style>
 </head>
 <body>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { API_CALL } from '../api';
 
 const SearchResults = () => {
   const { productName } = useParams();
@@ -16,7 +17,7 @@ const SearchResults = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/products/searchproduct/name?query=${productName}`);
+        const response = await axios.get(`${API_CALL}/products/searchproduct/name?query=${productName}`);
         if (response.data.products.length === 0) {
           // If no products found by name, assume it's a category and navigate to single category route
           const categoryResponse = await axios.get(`http://localhost:5000/categories/singlecategory/${productName}`);
